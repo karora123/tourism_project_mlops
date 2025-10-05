@@ -1,4 +1,4 @@
-%%writefile week_3_mls/hosting/hosting.py
+%%writefile tourism_project/hosting/hosting.py
 from huggingface_hub import HfApi
 import os
 
