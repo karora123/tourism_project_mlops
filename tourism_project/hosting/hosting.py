@@ -1,4 +1,5 @@
-from huggingface_hub import HfApi
+from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
+from huggingface_hub import HfApi, create_repo
 import os
 
 repo_id = "karora1804/tourism-project-hosting"
