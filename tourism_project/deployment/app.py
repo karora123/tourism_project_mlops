@@ -38,7 +38,7 @@ monthly_income = st.number_input("Monthly Income", min_value=1000, max_value=100
 # Assemble input into DataFrame
 input_data = pd.DataFrame([{
     'Age': age,
-    'TypeOfContract': type_of_contract,
+    'TypeofContract': type_of_contract,
     'CityTier': city_tier,
     'DurationOfPitch': duration_of_pitch,
     'Occupation': occupation,
@@ -58,7 +58,7 @@ input_data = pd.DataFrame([{
 }])
 
 
-if st.button("Predict Failure"):
+if st.button("Predict Package Purchase"):
     prediction = model.predict(input_data)[0]
     result = "Tourism Package Buy" if prediction == 1 else "No Failure"
     st.subheader("Prediction Result:")
