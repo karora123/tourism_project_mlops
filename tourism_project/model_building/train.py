@@ -31,6 +31,10 @@ Xtest = pd.read_csv(Xtest_path)
 ytrain = pd.read_csv(ytrain_path)
 ytest = pd.read_csv(ytest_path)
 
+# categorical column
+cat_columns=['TypeofContact','CityTier','Occupation','Gender','ProductPitched',
+             'Passport','PreferredPropertyStar','OwnCar','MaritalStatus','Designation']
+
 # one-hot encode catgorical variable and scale numeric feature
 numeric_features = [
     'Age',
