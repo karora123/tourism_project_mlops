@@ -21,10 +21,10 @@ mlflow.set_experiment("mlops-tourism-training-experiment")
 
 api = HfApi()
 
-Xtrain_path = "hf://datasets/karora1804/tourism-project/Xtrain.csv"
-Xtest_path = "hf://datasets/karora1804/tourism-project/Xtest.csv"
-ytrain_path = "hf://datasets/karora1804/tourism-project/ytrain.csv"
-ytest_path = "hf://datasets/karora1804/tourism-project/ytest.csv"
+Xtrain_path = "hf://datasets/karora1804/tourism-project-data/Xtrain.csv"
+Xtest_path = "hf://datasets/karora1804/tourism-project-data/Xtest.csv"
+ytrain_path = "hf://datasets/karora1804/tourism-project-data/ytrain.csv"
+ytest_path = "hf://datasets/karora1804/tourism-project-data/ytest.csv"
 
 Xtrain = pd.read_csv(Xtrain_path)
 Xtest = pd.read_csv(Xtest_path)
