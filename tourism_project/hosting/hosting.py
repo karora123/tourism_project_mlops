@@ -14,11 +14,12 @@ try:
     print(f"Space '{repo_id}' already exists. Using it.")
 except RepositoryNotFoundError:
     print(f"Space '{repo_id}' not found. Creating new space...")
-    create_repo(repo_id=repo_id, repo_type=repo_type, private=False, space_sdk="streamlit")
+    create_repo(repo_id=repo_id, repo_type=repo_type, space_sdk="streamlit", private=False, token=os.getenv("HF_TOKEN"))
     print(f"Space '{repo_id}' created.")
 
 api.upload_folder(
     folder_path="tourism_project/deployment",
     repo_id=repo_id,
     repo_type=repo_type,
+    path_in_repo="",
 )
