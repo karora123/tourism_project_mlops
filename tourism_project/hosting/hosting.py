@@ -1,4 +1,3 @@
-%%writefile tourism_project/hosting/hosting.py
 from huggingface_hub import HfApi
 import os
 
